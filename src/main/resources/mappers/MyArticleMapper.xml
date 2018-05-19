@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myblog.mapper.MyArticleMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.myblog.entity.MyArticle">
+		<id column="id" jdbcType="INTEGER" property="id" />
+	    <result column="article_title" jdbcType="VARCHAR" property="articleTitle" />
+	    <result column="article_content" jdbcType="VARCHAR" property="articleContent" />
+	    <result column="article_type" jdbcType="CHAR" property="articleType" />
+	    <result column="article_is_original" jdbcType="CHAR" property="articleIsOriginal" />
+	    <result column="article_img" jdbcType="VARCHAR" property="articleImg" />
+	    <result column="article_onclick" jdbcType="INTEGER" property="articleOnclick" />
+	    <result column="version" jdbcType="INTEGER" property="version" />
+	    <result column="state" jdbcType="VARCHAR" property="state" />
+	    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+	    <result column="creator" jdbcType="VARCHAR" property="creator" />
+	    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+	    <result column="operator" jdbcType="VARCHAR" property="operator" />
+	    <result column="remark" jdbcType="VARCHAR" property="remark" />
+	</resultMap>
+
+</mapper>

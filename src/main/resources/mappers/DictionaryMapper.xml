@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myblog.mapper.DictionaryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.myblog.entity.DictionaryModel">
+        <id column="pkid" jdbcType="INTEGER" property="pkid" />
+        <result column="dictkey" jdbcType="VARCHAR" property="dictkey" />
+        <result column="path" jdbcType="VARCHAR" property="path" />
+        <result column="sortidx" jdbcType="INTEGER" property="sortidx" />
+        <result column="pid" jdbcType="INTEGER" property="pid" />
+        <result column="value1" jdbcType="VARCHAR" property="value1" />
+        <result column="value2" jdbcType="VARCHAR" property="value2" />
+        <result column="value3" jdbcType="VARCHAR" property="value3" />
+        <result column="value4" jdbcType="VARCHAR" property="value4" />
+        <result column="value5" jdbcType="VARCHAR" property="value5" />
+        <result column="version" jdbcType="INTEGER" property="version" />
+        <result column="state" jdbcType="VARCHAR" property="state" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="creator" jdbcType="VARCHAR" property="creator" />
+        <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+        <result column="operator" jdbcType="VARCHAR" property="operator" />
+        <result column="display_name" jdbcType="VARCHAR" property="displayName" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+    </resultMap>
+
+</mapper>
